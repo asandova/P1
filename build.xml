@@ -1,0 +1,15 @@
+<project default="compile">
+
+	<target name="clean">
+		<delete>
+			<fileset dir=".">
+				<include name="*.class"/>
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="compile">
+		<javac srcdir="." destdir="." includeantruntime="false"/>
+	</target>
+
+</project>
